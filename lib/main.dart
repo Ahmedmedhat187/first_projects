@@ -7,6 +7,11 @@ void main() {
   print(true);
   int age = 10;
   var age2 = 10;
+  
+  var name = "Obada";
+  var message = "My name is $name";
+  print(message);
+  print("The number of cahracters in String Obada is " + name.length.toString());
   runApp(const MyApp());
 }
 
