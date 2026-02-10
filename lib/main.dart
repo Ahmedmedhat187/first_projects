@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
+  print("object");
+  print("This is my first app");
+  print(12 / 3);
+  print(true);
+  int age = 10;
+  var age2 = 10;
   runApp(const MyApp());
 }
 
