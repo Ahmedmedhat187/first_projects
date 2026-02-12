@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,6 +14,26 @@ void main() {
   var message = "My name is $name";
   print(message);
   print("The number of cahracters in String Obada is " + name.length.toString());
+
+  // If Conditional
+
+  int a = 2;
+  int b = 3;
+
+  if (a > b) {
+    print("$a is greater than $b");
+  } else if (a < b) {
+    print("$a is less than $b");
+  } else {
+    print("$a is equal to $b");
+  }
+
+  a < b ? print("$a is less than $b") : print("$a is greater than $b");
+
+  String nameo = null;
+  String nameToPrint = nameo ?? "Guest User";
+  print(nameToPrint);
+
   runApp(const MyApp());
 }
 
