@@ -30,9 +30,25 @@ void main() {
 
   a < b ? print("$a is less than $b") : print("$a is greater than $b");
 
-  String nameo = null;
+  Null nameo = null;
   String nameToPrint = nameo ?? "Guest User";
   print(nameToPrint);
+
+  String grade = "A";
+
+  switch (grade) {
+    case "A":
+      print("Excellent");
+      break;
+    case "B":
+      print("Good");
+      break;
+    case "C":
+      print("Average");
+      break;
+    default:
+      print("Invalid Grade");
+  }
 
   runApp(const MyApp());
 }
