@@ -142,7 +142,6 @@ class CharacterStatsTab extends StatelessWidget {
                 label,
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                       color: AppColors.textGrey600,
-                      backgroundColor: AppColors.shimmerBackground,
                     ),
               ),
               Text(

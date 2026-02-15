@@ -77,7 +77,6 @@ class StatCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(4),
                   child: LinearProgressIndicator(
                     value: progress,
-                    backgroundColor: AppColors.shimmerBackground,
                     valueColor: AlwaysStoppedAnimation<Color>(color),
                     minHeight: 8,
                   ),
