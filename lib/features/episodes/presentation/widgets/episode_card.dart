@@ -30,6 +30,8 @@ class EpisodeCard extends StatelessWidget {
           child: Center(
             child: Text(
               episode.episode,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 fontSize: 12,
                 fontWeight: FontWeight.bold,
@@ -41,6 +43,8 @@ class EpisodeCard extends StatelessWidget {
         ),
         title: Text(
           episode.name,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
           style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
