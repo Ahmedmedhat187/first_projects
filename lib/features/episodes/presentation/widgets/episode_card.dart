@@ -3,7 +3,7 @@ import 'package:samurai_studios/core/constants/app_colors.dart';
 import 'package:samurai_studios/features/episodes/domain/entities/episode_entity.dart';
 
 class EpisodeCard extends StatelessWidget {
-  final Episode episode;
+  final EpisodeEntity episode;
 
   const EpisodeCard({
     super.key,
