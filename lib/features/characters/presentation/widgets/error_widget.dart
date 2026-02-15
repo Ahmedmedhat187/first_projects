@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:samurai_studios/core/constants/app_colors.dart';
+// todo move to core (it used in multiple places)
 class ErrorDisplay extends StatelessWidget {
   final String message;
   final VoidCallback onRetry;

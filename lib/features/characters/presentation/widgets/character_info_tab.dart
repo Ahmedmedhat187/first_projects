@@ -112,6 +112,7 @@ class CharacterInfoTab extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
+                  // todo use localization
                   'Status',
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(
                         color: AppColors.textGrey600,
