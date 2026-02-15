@@ -55,7 +55,9 @@ class _CharacterDetailsScreenState extends State<CharacterDetailsScreen>
             ),
             bottom: TabBar(
               controller: _tabController,
-              tabs: const [
+              unselectedLabelColor: AppColors.textGrey,
+              labelColor: AppColors.white,
+              tabs: [
                 Tab(text: 'Info', icon: Icon(Icons.info_outline)),
                 Tab(text: 'Stats', icon: Icon(Icons.bar_chart)),
                 Tab(text: 'Location', icon: Icon(Icons.location_on_outlined)),
