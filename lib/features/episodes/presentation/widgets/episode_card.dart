@@ -63,7 +63,7 @@ class EpisodeCard extends StatelessWidget {
             ),
             const SizedBox(height: 2),
             Text(
-              '${episode.characterCount} characters',
+              '${episode.characters.length} characters',
               style: TextStyle(
                 fontSize: 12,
                 color: AppColors.textGrey500,
