@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:samurai_studios/features/episodes/domain/entities/episode.dart';
+import 'package:samurai_studios/core/constants/app_colors.dart';
+import 'package:samurai_studios/features/episodes/domain/entities/episode_entity.dart';
 
 class EpisodeCard extends StatelessWidget {
   final Episode episode;
@@ -53,7 +54,7 @@ class EpisodeCard extends StatelessWidget {
               'Air Date: ${episode.airDate}',
               style: TextStyle(
                 fontSize: 14,
-                color: Colors.grey[600],
+                color: AppColors.textGrey600,
               ),
             ),
             const SizedBox(height: 2),
@@ -61,7 +62,7 @@ class EpisodeCard extends StatelessWidget {
               '${episode.characterCount} characters',
               style: TextStyle(
                 fontSize: 12,
-                color: Colors.grey[500],
+                color: AppColors.textGrey500,
               ),
             ),
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:samurai_studios/core/constants/app_colors.dart';
 
 class StatCard extends StatelessWidget {
   final IconData icon;
@@ -48,14 +49,14 @@ class StatCard extends StatelessWidget {
               child: Icon(
                 icon,
                 size: 32,
-                color: Colors.white,
+                color: AppColors.white,
               ),
             ),
             const SizedBox(height: 12),
             Text(
               label,
               style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                    color: Colors.grey[600],
+                    color: AppColors.textGrey600,
                   ),
               textAlign: TextAlign.center,
             ),
@@ -74,7 +75,7 @@ class StatCard extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
                 child: LinearProgressIndicator(
                   value: progress,
-                  backgroundColor: Colors.grey[200],
+                  backgroundColor: AppColors.shimmerBackground,
                   valueColor: AlwaysStoppedAnimation<Color>(color),
                   minHeight: 8,
                 ),
