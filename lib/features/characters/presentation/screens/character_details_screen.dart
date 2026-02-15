@@ -43,6 +43,16 @@ class _CharacterDetailsScreenState extends State<CharacterDetailsScreen>
           SliverAppBar(
             expandedHeight: 300,
             pinned: true,
+            leading: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: CircleAvatar(
+                backgroundColor: AppColors.black.withValues(alpha: 0.5),
+                child: IconButton(
+                  icon: const Icon(Icons.arrow_back, color: AppColors.white),
+                  onPressed: () => Navigator.of(context).pop(),
+                ),
+              ),
+            ),
             bottom: TabBar(
               controller: _tabController,
               tabs: const [
